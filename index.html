@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>RIDER TV | Oficial App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --cyan: #00f2ff; --red: #ff003c; --bg: #020205; --glass: rgba(255, 255, 255, 0.05); --telegram: #0088cc; }
+        
+        body { 
+            font-family: 'Segoe UI', Roboto, sans-serif; background: var(--bg); color: white; margin: 0;
+            background-image: radial-gradient(circle at 50% -20%, #1a1a2e, var(--bg));
+            text-align: center; line-height: 1.5;
+            overflow-x: hidden; /* Evita el scroll horizontal */
+        }
+
+        .container { 
+            padding: 20px; 
+            max-width: 100%; /* Ajuste total a móvil */
+            margin: auto; 
+            box-sizing: border-box;
+        }
+
+        /* HEADER */
+        .logo-box { margin-bottom: 20px; }
+        .logo-text { color: var(--cyan); font-size: clamp(30px, 10vw, 45px); font-weight: 900; text-shadow: 0 0 20px var(--cyan); letter-spacing: 2px; margin: 0; }
+        .tagline { color: var(--red); font-weight: bold; font-size: 12px; letter-spacing: 3px; text-transform: uppercase; }
+
+        /* CARACTERÍSTICAS */
+        .features { 
+            display: grid; 
+            grid-template-columns: 1fr 1fr; 
+            gap: 10px; 
+            margin: 25px 0; 
+        }
+        .f-item { 
+            background: var(--glass); padding: 15px 10px; border-radius: 15px; border: 1px solid rgba(255,255,255,0.1);
+        }
+        .f-item i { font-size: 20px; color: var(--cyan); margin-bottom: 8px; }
+        .f-item h3 { font-size: 12px; margin: 0; text-transform: uppercase; letter-spacing: 1px; }
+
+        /* GUÍA DE INSTALACIÓN OPTIMIZADA */
+        .install-guide { 
+            background: rgba(0, 242, 255, 0.05); 
+            padding: 20px; 
+            border-radius: 20px; 
+            margin: 25px 0; 
+            border: 1px solid rgba(0, 242, 255, 0.2); 
+            text-align: left;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .install-guide h2 { color: var(--cyan); font-size: 1.1rem; margin-top: 0; text-align: center; }
+        .step { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 15px; }
+        .step-num { 
+            background: var(--cyan); color: black; font-weight: 900; width: 24px; height: 24px; 
+            border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 12px;
+        }
+        .step-text { font-size: 13px; color: #ddd; line-height: 1.4; }
+
+        /* BOTÓN TELEGRAM */
+        .btn-telegram {
+            background: var(--telegram);
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 12px;
+            border-radius: 12px;
+            font-weight: bold;
+            margin: 20px 0;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        /* FAQ */
+        .faq-section { margin-bottom: 130px; text-align: left; }
+        .faq-item { margin-bottom: 20px; border-bottom: 1px solid #222; padding-bottom: 15px; }
+        .faq-question { color: var(--cyan); font-weight: bold; font-size: 14px; margin-bottom: 5px; }
+        .faq-answer { font-size: 13px; color: #aaa; }
+
+        /* FOOTER DOWNLOAD */
+        .download-section {
+            position: fixed; bottom: 0; left: 0; width: 100%; background: rgba(0,0,0,0.95);
+            backdrop-filter: blur(15px); padding: 15px; box-sizing: border-box;
+            border-top: 1px solid rgba(0, 242, 255, 0.3); z-index: 100;
+        }
+        .btn-download {
+            background: linear-gradient(45deg, var(--red), #ff4d4d);
+            color: white; text-decoration: none; padding: 15px; border-radius: 50px;
+            font-weight: 900; font-size: 16px; display: flex; align-items: center; gap: 10px;
+            box-shadow: 0 5px 20px rgba(255, 0, 60, 0.4); width: 100%; justify-content: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="logo-box">
+            <h1 class="logo-text">RIDER TV</h1>
+            <div class="tagline">Oficial App Android</div>
+        </div>
+
+        <p style="font-size: 15px; color: #ccc; padding: 0 10px;">La mejor experiencia de streaming con +2,500 canales en vivo.</p>
+
+        <div class="features">
+            <div class="f-item"><i class="fas fa-bolt"></i><h3>Más Rápida</h3></div>
+            <div class="f-item"><i class="fas fa-user-slash"></i><h3>Sin Registro</h3></div>
+            <div class="f-item"><i class="fas fa-sync-alt"></i><h3>Auto-Update</h3></div>
+            <div class="f-item"><i class="fas fa-shield-alt"></i><h3>Segura</h3></div>
+        </div>
+
+        <a href="https://t.me/ridertvmx" target="_blank" class="btn-telegram">
+            <i class="fab fa-telegram-plane"></i> ÚNETE AL CANAL DE SOPORTE
+        </a>
+
+        <div class="install-guide">
+            <h2><i class="fas fa-magic"></i> ¿Cómo Instalar?</h2>
+            <div class="step">
+                <div class="step-num">1</div>
+                <div class="step-text">Pulsa <b>"Descargar Ahora"</b> y acepta la descarga del archivo APK.</div>
+            </div>
+            <div class="step">
+                <div class="step-num">2</div>
+                <div class="step-text">Si aparece "Archivo dañino", elige <b>"Descargar de todos modos"</b> (Es un aviso estándar).</div>
+            </div>
+            <div class="step">
+                <div class="step-num">3</div>
+                <div class="step-text">Abre el archivo e instala. ¡Ya puedes disfrutar de todo el contenido!</div>
+            </div>
+        </div>
+
+        <div class="faq-section">
+            <h2 style="text-align: center; color: var(--cyan); font-size: 1.1rem; margin-bottom: 20px;">Preguntas Frecuentes</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">¿Cómo activo el Premium?</div>
+                <div class="faq-answer">Dentro de la App ve a "Activar Premium". Realiza tu pago de <b>$25 MXN</b> vía Mercado Pago y obtendrás tu código de 30 días al instante.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">¿Por qué usar la App?</div>
+                <div class="faq-answer">A diferencia de la web, la App oficial permite ver todos los canales (incluyendo HTTP) sin bloqueos y con mayor estabilidad.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">¿Funciona en TV Box o FireStick?</div>
+                <div class="faq-answer"><b>Sí.</b> Es compatible con cualquier dispositivo Android. Solo descarga el APK desde el navegador de tu dispositivo.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="download-section">
+        <a href="https://apk.e-droid.net/apk/app3910967-ipe5zj.apk?v=1" class="btn-download">
+            <i class="fab fa-android"></i> DESCARGAR AHORA
+        </a>
+        <p style="font-size: 9px; color: #666; margin-top: 5px;">Versión 1.0 Oficial • Soporte vía Telegram @ridertvmx</p>
+    </div>
+
+</body>
+</html>
